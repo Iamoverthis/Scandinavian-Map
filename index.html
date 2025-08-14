@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_58614d68c9f36084e9d7d3a4f5c280a8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_58614d68c9f36084e9d7d3a4f5c280a8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_58614d68c9f36084e9d7d3a4f5c280a8 = L.map(
+                "map_58614d68c9f36084e9d7d3a4f5c280a8",
+                {
+                    center: [65.0, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+
+            
+
+        
+    
+            var tile_layer_ec5bd0e0f169a8b2c5e612c9f2d69c87 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+            var marker_bbcfca2b096c1954147feaa0850f99dc = L.marker(
+                [59.3293, 18.0686],
+                {}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+        var popup_32852cac0838b3af210be67105032a48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92dde258da4b0e4015c716adebd9856c = $(`<div id="html_92dde258da4b0e4015c716adebd9856c" style="width: 100.0%; height: 100.0%;"><b>Stockholm, Sweden</b><br>Days 1–3: Explore Gamla Stan, Vasa Museum, archipelago.</div>`)[0];
+            popup_32852cac0838b3af210be67105032a48.setContent(html_92dde258da4b0e4015c716adebd9856c);
+        
+
+        marker_bbcfca2b096c1954147feaa0850f99dc.bindPopup(popup_32852cac0838b3af210be67105032a48)
+        ;
+
+        
+    
+    
+            marker_bbcfca2b096c1954147feaa0850f99dc.bindTooltip(
+                `<div>
+                     Stockholm, Sweden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0077c60bf428b4ed9c224d7b1c1d66d2 = L.marker(
+                [66.5039, 25.7294],
+                {}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+        var popup_2bc320069b41be38b69db8918396573e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a733e82c10bc21687945cd4ed7a944a = $(`<div id="html_4a733e82c10bc21687945cd4ed7a944a" style="width: 100.0%; height: 100.0%;"><b>Rovaniemi, Finland</b><br>Days 4–7: Santa’s Village + Lapland activities.</div>`)[0];
+            popup_2bc320069b41be38b69db8918396573e.setContent(html_4a733e82c10bc21687945cd4ed7a944a);
+        
+
+        marker_0077c60bf428b4ed9c224d7b1c1d66d2.bindPopup(popup_2bc320069b41be38b69db8918396573e)
+        ;
+
+        
+    
+    
+            marker_0077c60bf428b4ed9c224d7b1c1d66d2.bindTooltip(
+                `<div>
+                     Rovaniemi, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c49b539288e12c5ea0c5c48daaebd75 = L.marker(
+                [60.3913, 5.3221],
+                {}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+        var popup_0a70b9436afcf4fb7ca0404286fcec2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_172225cb2326fbe677747054551d78ec = $(`<div id="html_172225cb2326fbe677747054551d78ec" style="width: 100.0%; height: 100.0%;"><b>Bergen, Norway</b><br>Day 8–9: Bergen base for Norway in a Nutshell.</div>`)[0];
+            popup_0a70b9436afcf4fb7ca0404286fcec2a.setContent(html_172225cb2326fbe677747054551d78ec);
+        
+
+        marker_7c49b539288e12c5ea0c5c48daaebd75.bindPopup(popup_0a70b9436afcf4fb7ca0404286fcec2a)
+        ;
+
+        
+    
+    
+            marker_7c49b539288e12c5ea0c5c48daaebd75.bindTooltip(
+                `<div>
+                     Bergen, Norway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf9f80c2f8a1bb9cc318514d60cc2dfe = L.marker(
+                [60.863, 7.1146],
+                {}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+        var popup_8298130f6494a4c2ef8696031e9d767e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b56e7577ec9dd6216ba8154a968a5bb = $(`<div id="html_2b56e7577ec9dd6216ba8154a968a5bb" style="width: 100.0%; height: 100.0%;"><b>Flåm, Norway</b><br>Day 8 overnight: Fjord cruise + Flåm Railway.</div>`)[0];
+            popup_8298130f6494a4c2ef8696031e9d767e.setContent(html_2b56e7577ec9dd6216ba8154a968a5bb);
+        
+
+        marker_bf9f80c2f8a1bb9cc318514d60cc2dfe.bindPopup(popup_8298130f6494a4c2ef8696031e9d767e)
+        ;
+
+        
+    
+    
+            marker_bf9f80c2f8a1bb9cc318514d60cc2dfe.bindTooltip(
+                `<div>
+                     Flåm, Norway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_943174dde6d2b9419bae3431445aa467 = L.marker(
+                [60.3913, 5.3221],
+                {}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+        var popup_bb0d3897a895762cf07883f04dbe626d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9c806deeffd476e1acfb85be5c12192 = $(`<div id="html_d9c806deeffd476e1acfb85be5c12192" style="width: 100.0%; height: 100.0%;"><b>Bergen, Norway (embark)</b><br>Day 9 evening: Board Hurtigruten northbound.</div>`)[0];
+            popup_bb0d3897a895762cf07883f04dbe626d.setContent(html_d9c806deeffd476e1acfb85be5c12192);
+        
+
+        marker_943174dde6d2b9419bae3431445aa467.bindPopup(popup_bb0d3897a895762cf07883f04dbe626d)
+        ;
+
+        
+    
+    
+            marker_943174dde6d2b9419bae3431445aa467.bindTooltip(
+                `<div>
+                     Bergen, Norway (embark)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4047685c54dd0f6f03434bc922971176 = L.marker(
+                [69.725, 30.0516],
+                {}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+        var popup_208affd2d3a9cb05166c3e402c199c5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_924a3dd1495121b8a84e34301ff23a4f = $(`<div id="html_924a3dd1495121b8a84e34301ff23a4f" style="width: 100.0%; height: 100.0%;"><b>Kirkenes, Norway</b><br>Day 16: Disembark Coastal Express.</div>`)[0];
+            popup_208affd2d3a9cb05166c3e402c199c5a.setContent(html_924a3dd1495121b8a84e34301ff23a4f);
+        
+
+        marker_4047685c54dd0f6f03434bc922971176.bindPopup(popup_208affd2d3a9cb05166c3e402c199c5a)
+        ;
+
+        
+    
+    
+            marker_4047685c54dd0f6f03434bc922971176.bindTooltip(
+                `<div>
+                     Kirkenes, Norway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1a19b62360ec7a5eb17c4dca1132151 = L.marker(
+                [78.2232, 15.6469],
+                {}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+        var popup_7555bb5dc24cba3212cb84c76ed92afd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11541c8f96f7d975d7ac98a46c191f04 = $(`<div id="html_11541c8f96f7d975d7ac98a46c191f04" style="width: 100.0%; height: 100.0%;"><b>Longyearbyen, Svalbard</b><br>Days 17–19: Svalbard guided adventures.</div>`)[0];
+            popup_7555bb5dc24cba3212cb84c76ed92afd.setContent(html_11541c8f96f7d975d7ac98a46c191f04);
+        
+
+        marker_d1a19b62360ec7a5eb17c4dca1132151.bindPopup(popup_7555bb5dc24cba3212cb84c76ed92afd)
+        ;
+
+        
+    
+    
+            marker_d1a19b62360ec7a5eb17c4dca1132151.bindTooltip(
+                `<div>
+                     Longyearbyen, Svalbard
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d033204f96afeab51cf5086501e40ed5 = L.marker(
+                [59.9139, 10.7522],
+                {}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+        var popup_2c89dfbcec846e07cf016a411843b77b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6fb61f1033982e4c1074a78c12ca8c8 = $(`<div id="html_e6fb61f1033982e4c1074a78c12ca8c8" style="width: 100.0%; height: 100.0%;"><b>Oslo, Norway</b><br>Days 20–21: Overnight then fly home.</div>`)[0];
+            popup_2c89dfbcec846e07cf016a411843b77b.setContent(html_e6fb61f1033982e4c1074a78c12ca8c8);
+        
+
+        marker_d033204f96afeab51cf5086501e40ed5.bindPopup(popup_2c89dfbcec846e07cf016a411843b77b)
+        ;
+
+        
+    
+    
+            marker_d033204f96afeab51cf5086501e40ed5.bindTooltip(
+                `<div>
+                     Oslo, Norway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_7e95b4cbdf11edb640f9e8d6163d8c19 = L.polyline.antPath(
+              [[59.3293, 18.0686], [66.5039, 25.7294], [60.3913, 5.3221], [60.863, 7.1146], [60.3913, 5.3221], [69.725, 30.0516], [78.2232, 15.6469], [59.9139, 10.7522]],
+              {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": [10, 20], "dashOffset": null, "delay": 800, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+            var poly_line_00523d25476683c45d9b74a266801627 = L.polyline(
+                [[59.3293, 18.0686], [66.5039, 25.7294], [60.3913, 5.3221], [60.863, 7.1146], [60.3913, 5.3221], [69.725, 30.0516], [78.2232, 15.6469], [59.9139, 10.7522]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+            var feature_group_e1b7748960e97a5db0fa199114891738 = L.featureGroup(
+                {}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+    
+            var marker_7623ac5dd967f0f2095b9ba161f4dec5 = L.marker(
+                [59.3293, 18.0686],
+                {}
+            ).addTo(feature_group_e1b7748960e97a5db0fa199114891738);
+        
+    
+            var icon_5a2f599122dfe38beab759b5ff7fca1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7623ac5dd967f0f2095b9ba161f4dec5.setIcon(icon_5a2f599122dfe38beab759b5ff7fca1a);
+        
+    
+        var popup_71970ff475782e2a11490c79a8f60682 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b13b1ef7ec7c8f3a58e07cbe7d2a79d = $(`<div id="html_6b13b1ef7ec7c8f3a58e07cbe7d2a79d" style="width: 100.0%; height: 100.0%;"><b>Stockholm</b><br>Hotel Rival – Trendy boutique in Södermalm.</div>`)[0];
+            popup_71970ff475782e2a11490c79a8f60682.setContent(html_6b13b1ef7ec7c8f3a58e07cbe7d2a79d);
+        
+
+        marker_7623ac5dd967f0f2095b9ba161f4dec5.bindPopup(popup_71970ff475782e2a11490c79a8f60682)
+        ;
+
+        
+    
+    
+            marker_7623ac5dd967f0f2095b9ba161f4dec5.bindTooltip(
+                `<div>
+                     Stockholm Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0829506adeac1eb5109b38ed38c83ee1 = L.marker(
+                [66.5039, 25.7294],
+                {}
+            ).addTo(feature_group_e1b7748960e97a5db0fa199114891738);
+        
+    
+            var icon_d795fc2a9974ec2a49dd7129f28f18b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0829506adeac1eb5109b38ed38c83ee1.setIcon(icon_d795fc2a9974ec2a49dd7129f28f18b4);
+        
+    
+        var popup_7738ddb5020ed060b47014725a767b63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd45e43ee3d2946abeee1fd342dcbdde = $(`<div id="html_dd45e43ee3d2946abeee1fd342dcbdde" style="width: 100.0%; height: 100.0%;"><b>Rovaniemi</b><br>Arctic Light Hotel – Stylish, central, with Lapland charm.</div>`)[0];
+            popup_7738ddb5020ed060b47014725a767b63.setContent(html_dd45e43ee3d2946abeee1fd342dcbdde);
+        
+
+        marker_0829506adeac1eb5109b38ed38c83ee1.bindPopup(popup_7738ddb5020ed060b47014725a767b63)
+        ;
+
+        
+    
+    
+            marker_0829506adeac1eb5109b38ed38c83ee1.bindTooltip(
+                `<div>
+                     Rovaniemi Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_355844618d1575d16a6ca52de2fb87bd = L.marker(
+                [60.3913, 5.3221],
+                {}
+            ).addTo(feature_group_e1b7748960e97a5db0fa199114891738);
+        
+    
+            var icon_536e7b7acaafb635a5b6709d7d5f3610 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_355844618d1575d16a6ca52de2fb87bd.setIcon(icon_536e7b7acaafb635a5b6709d7d5f3610);
+        
+    
+        var popup_e37c3702510aa984c788b4a9e1775042 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2724363e3cc68251ec33c467a9d6519 = $(`<div id="html_d2724363e3cc68251ec33c467a9d6519" style="width: 100.0%; height: 100.0%;"><b>Bergen</b><br>Opus XVI – Historic luxury near Bryggen Wharf.</div>`)[0];
+            popup_e37c3702510aa984c788b4a9e1775042.setContent(html_d2724363e3cc68251ec33c467a9d6519);
+        
+
+        marker_355844618d1575d16a6ca52de2fb87bd.bindPopup(popup_e37c3702510aa984c788b4a9e1775042)
+        ;
+
+        
+    
+    
+            marker_355844618d1575d16a6ca52de2fb87bd.bindTooltip(
+                `<div>
+                     Bergen Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92645b0179689cb04519614cd2c811ec = L.marker(
+                [60.863, 7.1146],
+                {}
+            ).addTo(feature_group_e1b7748960e97a5db0fa199114891738);
+        
+    
+            var icon_cf6821afdea875360a44a0fd8f5b8879 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_92645b0179689cb04519614cd2c811ec.setIcon(icon_cf6821afdea875360a44a0fd8f5b8879);
+        
+    
+        var popup_ad0307b6080e5c66cb1597ba42d4363e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c95e274dc5dcf20145116588abf890a = $(`<div id="html_0c95e274dc5dcf20145116588abf890a" style="width: 100.0%; height: 100.0%;"><b>Flåm</b><br>Flåmsbrygga Hotel – Fjordside rooms, great views.</div>`)[0];
+            popup_ad0307b6080e5c66cb1597ba42d4363e.setContent(html_0c95e274dc5dcf20145116588abf890a);
+        
+
+        marker_92645b0179689cb04519614cd2c811ec.bindPopup(popup_ad0307b6080e5c66cb1597ba42d4363e)
+        ;
+
+        
+    
+    
+            marker_92645b0179689cb04519614cd2c811ec.bindTooltip(
+                `<div>
+                     Flåm Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a358584dd2657d285ac0151f20da3b76 = L.marker(
+                [69.725, 30.0516],
+                {}
+            ).addTo(feature_group_e1b7748960e97a5db0fa199114891738);
+        
+    
+            var icon_a72e3d885f5e0cb3c0ddc7ac5c3919f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a358584dd2657d285ac0151f20da3b76.setIcon(icon_a72e3d885f5e0cb3c0ddc7ac5c3919f8);
+        
+    
+        var popup_47303192d4951bce93785ae51f3e0ba8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5668da34533c4cd59ca70031784e451a = $(`<div id="html_5668da34533c4cd59ca70031784e451a" style="width: 100.0%; height: 100.0%;"><b>Kirkenes</b><br>Snowhotel Kirkenes – Glass igloos & snowy surroundings.</div>`)[0];
+            popup_47303192d4951bce93785ae51f3e0ba8.setContent(html_5668da34533c4cd59ca70031784e451a);
+        
+
+        marker_a358584dd2657d285ac0151f20da3b76.bindPopup(popup_47303192d4951bce93785ae51f3e0ba8)
+        ;
+
+        
+    
+    
+            marker_a358584dd2657d285ac0151f20da3b76.bindTooltip(
+                `<div>
+                     Kirkenes Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73edd62a2a597e3b0752c291567ec3c5 = L.marker(
+                [78.2232, 15.6469],
+                {}
+            ).addTo(feature_group_e1b7748960e97a5db0fa199114891738);
+        
+    
+            var icon_3eaf888f1da9eb61ac4db67296ad2fea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_73edd62a2a597e3b0752c291567ec3c5.setIcon(icon_3eaf888f1da9eb61ac4db67296ad2fea);
+        
+    
+        var popup_5593e35aee5867aae546242fc406598b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9beb86f95ec2d658cf81bd9897103908 = $(`<div id="html_9beb86f95ec2d658cf81bd9897103908" style="width: 100.0%; height: 100.0%;"><b>Longyearbyen</b><br>Funken Lodge – Warm, upscale base for Svalbard explorations.</div>`)[0];
+            popup_5593e35aee5867aae546242fc406598b.setContent(html_9beb86f95ec2d658cf81bd9897103908);
+        
+
+        marker_73edd62a2a597e3b0752c291567ec3c5.bindPopup(popup_5593e35aee5867aae546242fc406598b)
+        ;
+
+        
+    
+    
+            marker_73edd62a2a597e3b0752c291567ec3c5.bindTooltip(
+                `<div>
+                     Longyearbyen Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1501bc7ad2899329075ac54389db104 = L.marker(
+                [59.9139, 10.7522],
+                {}
+            ).addTo(feature_group_e1b7748960e97a5db0fa199114891738);
+        
+    
+            var icon_5a1cf7e33c2edca5c5b0d667ef87d8de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a1501bc7ad2899329075ac54389db104.setIcon(icon_5a1cf7e33c2edca5c5b0d667ef87d8de);
+        
+    
+        var popup_db5e3c08ac54219d8f3734bcb45fe3b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26d6cf8d164045e63aebbc3dab5e67ca = $(`<div id="html_26d6cf8d164045e63aebbc3dab5e67ca" style="width: 100.0%; height: 100.0%;"><b>Oslo</b><br>The Thief – Chic waterfront hotel on Tjuvholmen.</div>`)[0];
+            popup_db5e3c08ac54219d8f3734bcb45fe3b0.setContent(html_26d6cf8d164045e63aebbc3dab5e67ca);
+        
+
+        marker_a1501bc7ad2899329075ac54389db104.bindPopup(popup_db5e3c08ac54219d8f3734bcb45fe3b0)
+        ;
+
+        
+    
+    
+            marker_a1501bc7ad2899329075ac54389db104.bindTooltip(
+                `<div>
+                     Oslo Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_65c03758634833b5b5658592a4b0d33b = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ec5bd0e0f169a8b2c5e612c9f2d69c87,
+                },
+                overlays :  {
+                    "Hotel Suggestions" : feature_group_e1b7748960e97a5db0fa199114891738,
+                },
+            };
+            L.control.layers(
+                layer_control_65c03758634833b5b5658592a4b0d33b.base_layers,
+                layer_control_65c03758634833b5b5658592a4b0d33b.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_58614d68c9f36084e9d7d3a4f5c280a8);
+        
+</script>
+</html>
